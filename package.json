@@ -1,0 +1,10 @@
+{
+  "name": "cetakeero",
+  "scripts": {
+    "deploy": "wrangler pages deploy ./build/web",
+    "dev": "wrangler pages dev ./build/web"
+  },
+  "dependencies": {
+    "wrangler": "^4.136.2"
+  }
+}
