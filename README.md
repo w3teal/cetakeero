@@ -70,13 +70,18 @@ iOS, macOS, Windows, Linux and web print.
 > (GTK) print dialog honours the page size passed by the app instead of
 > resetting to the printer's default page size.
 
-## Development
+## Building
+
+To build the appimage, you need to [get appimage-builder](https://appimage-builder.readthedocs.io/en/latest/intro/install.html) installed.
 
 ```sh
 flutter pub get
 flutter test
 flutter analyze
-flutter run -d linux
+
+flutter build web
+flutter build linux
+appimage-builder --recipe AppImageBuilder.yml
 ```
 
 Note: on Linux, printing requires CUPS (`libcups2-dev` and a running `cupsd`)

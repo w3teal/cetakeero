@@ -78,6 +78,11 @@ node_modules
 .env*
 !.env.example
 
+# Linux AppImage
+/AppDir
+/appimage-build
+*.AppImage*
+
 # Agents related
 .agents/
 skills-lock.json
